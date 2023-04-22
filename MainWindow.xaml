@@ -10,7 +10,7 @@
             
             <Button
                 Content="Pick File"
-                Click="Button_Click" />
+                Click="PickFile_Click" />
 
             <MediaElement
                 x:Name="Media" />
