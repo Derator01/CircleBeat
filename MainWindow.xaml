@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="MainWindow">
-    <StackPanel>
+    <StackPanel x:Name="MainStack">
+        
         <StackPanel>
             
             <Button
@@ -19,17 +20,17 @@
                 Content="0"
                 x:Name ="CountLbl" />
 
-            <Label
-                Content="0"
+            <TextBox
+                Text="0"
                 x:Name="BPMLbl" />
 
-            <Slider
+            <Slider Style="{DynamicResource BeatSlider}"
                 x:Name="BeatSldr" />
 
         </StackPanel>
         
         <StackPanel
-            x:Name="MainStack">
+            x:Name="SliderStack">
             
         </StackPanel>
 
